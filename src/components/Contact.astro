@@ -1,0 +1,102 @@
+---
+const year = new Date().getFullYear();
+---
+
+<section class="section contact" id="contact">
+  <div class="wrap reveal">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">Let’s talk</h2>
+    <p class="section-lead">
+      Open to security engineering roles. Best reach is email; GitHub and
+      LinkedIn are kept current.
+    </p>
+    <ul class="contact__list">
+      <li>
+        <a href="mailto:dustin.butterworth@protonmail.com"
+          >dustin.butterworth@protonmail.com</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/dustinbutterworth"
+          rel="noopener noreferrer"
+          target="_blank">github.com/dustinbutterworth</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/dustinbutterworth/"
+          rel="noopener noreferrer"
+          target="_blank">linkedin.com/in/dustinbutterworth</a
+        >
+      </li>
+      <li>
+        <a href="/resume.pdf">Download resume (PDF)</a>
+      </li>
+    </ul>
+    <p class="contact__note">Member of InfraGard.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© {year} Dustin Butterworth</p>
+    <p>
+      <a href="https://www.dustinbutterworth.com">www.dustinbutterworth.com</a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .contact__list {
+    list-style: none;
+    margin: 2rem 0 1rem;
+    padding: 0;
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .contact__list a {
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .contact__list a:hover {
+    border-bottom-color: currentColor;
+  }
+
+  .contact__note {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+
+  .footer {
+    border-top: 1px solid var(--line);
+    padding: 1.5rem 0 2.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+  }
+
+  .footer p {
+    margin: 0;
+  }
+
+  .footer a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    color: var(--accent);
+  }
+</style>

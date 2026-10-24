@@ -1,0 +1,76 @@
+---
+const areas = [
+  {
+    title: 'Cloud & identity',
+    body: 'CNAPP posture (Prisma Cloud / Cortex Cloud), Entra Conditional Access, Power Platform controls, and SaaS security via SSPM.',
+  },
+  {
+    title: 'Detection engineering',
+    body: 'Custom Microsoft Defender alerts and cloud security signal into Google SecOps—tight feedback with SecOps on what actually fires.',
+  },
+  {
+    title: 'AI application security',
+    body: 'Architectural reviews with OWASP LLM Top 10 and MITRE ATLAS, Bedrock Guardrails, promptfoo red teaming, and secure Claude Enterprise adoption.',
+  },
+];
+---
+
+<section class="section focus" id="focus">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="section-label">Focus</p>
+      <h2 class="section-title">Where I spend my time</h2>
+      <p class="section-lead">
+        A generalist security engineer with depth where cloud, detections, and
+        AI systems meet.
+      </p>
+    </div>
+    <ul class="focus__list">
+      {
+        areas.map((area, i) => (
+          <li class={`focus__item reveal`} style={`transition-delay: ${i * 80}ms`}>
+            <h3>{area.title}</h3>
+            <p>{area.body}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .focus__list {
+    list-style: none;
+    margin: 2.5rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .focus__item {
+    display: grid;
+    grid-template-columns: minmax(10rem, 16rem) 1fr;
+    gap: 1rem 2rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .focus__item h3 {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+
+  .focus__item p {
+    margin: 0;
+    color: var(--ink-soft);
+    max-width: var(--measure);
+  }
+
+  @media (max-width: 720px) {
+    .focus__item {
+      grid-template-columns: 1fr;
+      gap: 0.4rem;
+    }
+  }
+</style>
