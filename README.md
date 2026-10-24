@@ -4,6 +4,8 @@ Personal site for [www.dustinbutterworth.com](https://www.dustinbutterworth.com)
 
 ## Local development
 
+Requires **Node.js ≥ 22.23.4** (Astro 7).
+
 ```bash
 npm install
 npm run dev
